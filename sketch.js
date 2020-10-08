@@ -48,8 +48,7 @@ function hasCollided(bullet,wall){
 
   if(bulletRightEdge>=wallLeftEdge){
     return true; } 
-    {return false;
-  }
+  else {return false;}
    
    bullet.velocityX=0; 
    var damage = 0.5*weight*speed*speed/(thickness*thickness*thickness)
