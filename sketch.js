@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background(265,265,0); 
+  background("black"); 
 
   
   
