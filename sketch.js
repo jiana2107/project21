@@ -38,7 +38,7 @@ function draw() {
       bullet.shapeColor=color(0,255,0)}
   }*/
 
- hasCollided();
+ hasCollided(bullet,wall);
   drawSprites();
 }
 
