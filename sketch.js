@@ -43,22 +43,22 @@ function draw() {
 }
 
 function hasCollided(bullet,wall){
-   bulletRightEdge=bullet.x+bullet.width/2;
+  bulletRightEdge=bullet.x+bullet.width/2;
   wallLeftEdge=wall.x - wall.width/2;
 
   if(bulletRightEdge>=wallLeftEdge)
   { return true; } 
-  else {return false;
+   else {
    
-   bullet.velocityX=0; 
-   var damage = 0.5*weight*speed*speed/(thickness*thickness*thickness)
+  bullet.velocityX=0; 
+  var damage = 0.5*weight*speed*speed/(thickness*thickness*thickness)
 
-   if(damage>10){
-     wall.shapeColor=color(255,0,0)};
+  if(damage>10){
+   wall.shapeColor=color(255,0,0)};
   
-     if(damage<10){
-      wall.shapeColor=color(0,255,0)};
-       }
+   if(damage<10){
+    wall.shapeColor=color(0,255,0)};
+    return false; }
 
 
 }
