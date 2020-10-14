@@ -46,6 +46,12 @@ function hasCollided(bullet,wall){
   bulletRightEdge=bullet.x+bullet.width/2;
   wallLeftEdge=wall.x - wall.width/2;
   
+   if(bulletRightEdge>=wallLeftEdge)
+  { return true; } 
+   else 
+    return false; }
+  
+if(hasCollided(bullet,wall)){
   bullet.velocityX=0; 
   var damage = 0.5*weight*speed*speed/(thickness*thickness*thickness)
 
@@ -55,12 +61,7 @@ function hasCollided(bullet,wall){
    if(damage<10){
     wall.shapeColor=color(0,255,0)};
 
-  if(bulletRightEdge>=wallLeftEdge)
-  { return true; } 
-   else {
-    return false; }
 
-
-}
+}}
 
 
