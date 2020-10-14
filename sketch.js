@@ -48,7 +48,7 @@ function hasCollided(bullet,wall){
   
    if(bulletRightEdge>=wallLeftEdge)
   { return true; } 
-   else 
+   else{ 
     return false; }
   
 if(hasCollided(bullet,wall)){
